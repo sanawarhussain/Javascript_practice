@@ -348,7 +348,197 @@
 
 
 
-//practice question 13
+//practice question 13 E-commerce
+// Imagine you're building a shopping website.
+// A product costs 1000.
+// // If the customer is a premium member, give 20% discount. Otherwise, no discount.
+// Customer
+//    ↓
+// Is the customer Premium?
+//    ↓
+//  YES                 NO
+//  ↓                   ↓
+// 20% discount        No discount
+//  ↓                   ↓
+// Rs. 800             Rs. 1000
+// let price = 1000;
+// let isPremium = true;
+// function  calculatePrice  (price , isPremium){
+//     if(isPremium){
+//         return price * 0.8;
+//     } else{
+//         return price * 1;
+//     }
+// }
+// calculatePrice(price , isPremium);
+// console.log(calculatePrice(price,isPremium));
+// Product price
+// //      ↓
+// Premium member?
+//    ↙       ↘
+//  YES       NO
+//   ↓         ↓
+// × 0.8      × 1
+//   ↓         ↓
+// Discount   Full price
+
+
+
+
+
+
+
+
+
+
+
+
+// practice question 14 Shopping cart 
+// A customer gets free delivery if:
+// Order amount is Rs. 2000 or more
+// Otherwise delivery costs Rs. 200
+// 2500 → Free delivery
+// 2000 → Free delivery
+// 1500 → Delivery = Rs. 200
+// function calculateOrder(order){
+//     if(order >= 2000){
+//         return "delivery 0";
+//     } else {
+//         return "delivery 200";
+//     }
+
+// }
+// let order = prompt("enter the order amount");
+// calculateOrder(order);
+// console.log(calculateOrder(order));
+
+
+
+
+
+
+
+
+//practice question 15 Login Validation
+// A website has:
+// Correct email:    admin@gmail.com
+// Correct password: 12345
+// Example
+// admin@gmail.com + 12345 → Login successful
+// admin@gmail.com + 11111 → Wrong password
+// user@gmail.com  + 12345 → Wrong email
+// function login(email , password){
+//     if(email=== "admin@gmail.com" && password === 12345 ) return "Login Successfully";
+//     else{
+//         return "wrong email & passwrod";
+//     }   
+// }
+
+// login("admin@gmail.com" , 12345);
+// console.log(login("admin@gmail.com" , 12345));
+
+
+
+
+//practicw question 16 E-commerce stock check
+// A customer wants to buy a product. Your system has:
+
+// stock → how many items are available
+// quantity → how many the customer wants
+
+// example 
+// stock = 10, quantity = 3  → Order confirmed
+// stock = 10, quantity = 10 → Order confirmed
+// stock = 10, quantity = 15 → Not enough stock
+// let stock = 10 ;
+// function StockCheck(quantity){
+// if( stock >= quantity  ){
+//     return " order confirmed"
+// } else{
+//     return " order no confirmed";
+// }
+// }
+
+// let quantity = prompt ("enter the quantity you want ");
+// console.log(StockCheck(quantity));
+
+
+
+
+
+
+
+//practice question 17 ATM withdrawal system 
+// Build a function for an ATM.
+// The ATM has:
+// correctPin = 1234
+// balance = 50000
+// The customer enters:
+// pin
+// withdrawAmount
+// Rules:
+// If the PIN is wrong → "Incorrect PIN"
+// If PIN is correct and withdrawal amount is greater than balance → "Insufficient balance"
+// If PIN is correct and enough balance → "Withdrawal successful"
+// Examples:
+// 1234 + 10000 → Withdrawal successful
+// 1234 + 60000 → Insufficient balance
+// 1111 + 10000 → Incorrect PIN
+// let balance = 50000;
+// function ATM (pin , withdrawAmount ){
+//  if(pin==="1234" && withdrawAmount <= balance) return "withdrawal successfully";
+//  if(pin==="1234" && withdrawAmount > balance) return "Insufficent balance";
+//  else{
+//     return "wrong pin"
+//  }
+// }
+
+// let pin = prompt ( "Enter your pin");
+// let withdrawAmount = prompt ("enter the withdrawAmount");
+// ATM(pin , withdrawAmount);
+// console.log(ATM(pin , withdrawAmount));
+
+
+
+
+
+//practice question 18 ATM withdrawal system
+// A company accepts an application only if:
+// Age is 18 or above
+// Education is "graduate"
+// Experience is 2 years or more
+
+// Otherwise, reject the application.
+// example
+// 25, "graduate", 3 → "Application accepted"
+// 22, "graduate", 1 → "Not enough experience"
+// 17, "graduate", 3 → "Age requirement not met"
+// 25, "intermediate", 5 → "Education requirement not met"
+// function application(agee , experience , education ){
+//     if (agee >=18 && experience >=2 && education === "graduate") return "eligible";
+//     if (agee < 18) return "Not enough age ";
+//     if (experience < 2) return " experience not enough";
+//     if (education !== "graduate") return "Not enough age ";
+    
+//     else{
+//         return "no eligible";
+//     }
+// }
+// let agee = Number(prompt("enter the age "));
+// let experience = Number(prompt("enter the experience"));
+// let education = (prompt("enter the education"));
+// application(agee,experience,education);
+// console.log(application(agee,experience,education));
+
+
+
+
+
+
+
+
+
+
 
 
 
