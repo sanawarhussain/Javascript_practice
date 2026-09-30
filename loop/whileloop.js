@@ -41,24 +41,24 @@
 
 
 
-let passwrod = Numbers(prompt("enter the password"));
-i=1;
-while( i!==12345){
-    function(){
-    }
-console.log(i);   
-    i++;
-}
+// let passwrod = Numbers(prompt("enter the password"));
+// i=1;
+// while( i!==12345){
+//     function(){
+//     }
+// console.log(i);   
+//     i++;
+// }
 
 
 
-//to print whole table
-let y=1;
+// //to print whole table
+// let y=1;
 
-for(i=5; i<=50; i+=5){
-    console.log(`5 * ${y++}  = ${i} `);
+// for(i=5; i<=50; i+=5){
+//     console.log(`5 * ${y++}  = ${i} `);
 
-}
+// }
 
 
 
